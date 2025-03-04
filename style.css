@@ -47,9 +47,9 @@ header img , footer img{
     width: 3.5rem;
 }
 
-header nav{
+/* header nav{
     width: 20%;
-}
+} */
 
 header ul{
     list-style: none;
@@ -61,6 +61,7 @@ header ul{
 header a{
     color: white;
     text-decoration: none;
+    padding: 1rem;
 }
 
 #floatdiv{
@@ -198,6 +199,7 @@ footer>section{
     background-color: black;
     display: flex;
     justify-content: center;
+    
 }
 
 footer>section>section {
@@ -205,10 +207,39 @@ footer>section>section {
 
 }
 
+footer>section>*{
+    padding: 4rem;
+}
+
 footer address{
     width: 10%;
 }
 
 footer address > *{
-    margin-bottom : 1rem;
+    margin-bottom : 1.5rem;
+}
+
+@media screen and (max-width:660px) {
+    #floatdiv{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .floatart{
+        width: 80%;
+        height: 15rem;
+    }
+
+    #bannerwedding{
+        font-size: 70%;
+    }
+
+    #bannerwedding hgroup{
+        width: 50%;
+        margin: 0;
+    }
+
+    footer address{
+        width: 20%;
+    }
 }
